@@ -27,3 +27,5 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+
+//testing testing
