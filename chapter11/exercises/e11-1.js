@@ -17,7 +17,7 @@ let randomFunction = function(str){
       return str;
     }
   }
-console.log(randomFunction("10"))
+console.log(randomFunction("string,string˜˜"));
 
 
 /* Use your fuction and the map method to change an array  as follows:
@@ -29,3 +29,5 @@ c) Print the new array to confirm your work.
 let arr = ['Elocution', 21, 'Clean teeth', 100];
 
 //testing testing
+
+// testing again
