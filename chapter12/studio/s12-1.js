@@ -40,9 +40,7 @@ function buildCrewArray(randomIDNumbers, candidates) {
 
       } 
 }
-
 return winners;
-
 }
 // Here are the candidates and the 'animals' array:
 let candidateA = {
