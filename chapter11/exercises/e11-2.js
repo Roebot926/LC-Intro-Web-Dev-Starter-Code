@@ -9,6 +9,18 @@ function checkFuel(level) {
       return 'red';
     }
   }
+
+  let suspicious = function(str){
+    if (checkFuel === 'green'){
+      return str - 100001; 
+    }
+    if (checkFuel === 'yellow'){
+      return str - 50001 
+    }
+    else{
+      return str
+    }
+  }
   
   function holdStatus(arr){
     if (arr.length < 7) {
@@ -20,9 +32,11 @@ function checkFuel(level) {
     }
   }
   
+ 
   let fuelLevel = 200000;
   let cargoHold = ['meal kits', 'space suits', 'first-aid kit', 'satellite', 'gold', 'water', 'AE-35 unit'];
   
+
   console.log("Fuel level: " + checkFuel(fuelLevel));
   console.log("Hold status: " + holdStatus(cargoHold));
   
