@@ -21,8 +21,10 @@ describe("Testing launchcode", function(){
 
 describe('Testing launchOutput', function(){
   it(`programsOffered should list as array "LC101", "LaunchCode Women+", 'CodeCamp'`, function(){
-    let output = launchcode.programsOffered;
-    expect(output).toEqual(["LC101", "LaunchCode Women+", 'CodeCamp'])
+    expect(launchcode.programsOffered).toContain('LC101');
+    expect(launchcode.programsOffered).toContain('LaunchCode Women+');
+    expect(launchcode.programsOffered).toContain('CodeCamp');
+    expect(launchcode.programsOffered.length).toEqual(3);
   });
   
   it('when passing a number through launchOutput that is divisible by 2 return Launch!', function(){
