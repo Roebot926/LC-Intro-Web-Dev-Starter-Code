@@ -1,6 +1,11 @@
-let launchcode = {
-  
-}
+const Jasmine = require('jasmine');
+const jasmine = new Jasmine();
 
-module.exports = launchcode;
+jasmine.loadConfig({
+   spec_dir: 'spec',
+   spec_files: [
+      "**/*[sS]pec.js"
+   ],
+});
 
+jasmine.execute();
