@@ -1,12 +1,29 @@
 // 17.4.2. Test Student Labs
 
 function gradeLabs(labs) {
-    for (let i=0; i < labs.length; i++) {
-      let lab = labs[i];
-      let result = lab.runLab(3);
-      console.log(`${lab.student} code worked: ${result === 27}`);
+
+  for (let i=0; i < labs.length; i++) {
+
+    let lab = labs[i];
+
+    try {
+
+    let result = lab.runLab(3);
+    console.log(`${lab.student} code worked: ${result === 27}`);
+    } catch(err) {
+       result = "Error Thrown"
+       console.log(result)
     }
-  }
+}
+
+}
+// try {
+//   console.log('animal at index:', animals[index].name);
+// } catch(err) {
+//   console.log("We caught a TypeError, but our program continues to run!");
+//   console.log("You tried to access an animal at index:", index);
+// }
+
   
   let studentLabs = [
     {
@@ -24,3 +41,26 @@ function gradeLabs(labs) {
   ];
   
   gradeLabs(studentLabs);
+
+  let studentLabs2 = [
+   {
+      student: 'Blake',
+      myCode: function (num) {
+         return Math.pow(num, num);
+      }
+   },
+   {
+      student: 'Jessica',
+      runLab: function (num) {
+         return Math.pow(num, num);
+      }
+   },
+   {
+      student: 'Mya',
+      runLab: function (num) {
+         return num * num;
+      }
+   }
+];
+
+gradeLabs(studentLabs2);

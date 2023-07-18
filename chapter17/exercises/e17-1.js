@@ -7,3 +7,13 @@
 // However, if the denominator is zero you should throw the error, "Attempted to divide by zero."
 
 // Code your divide function here:
+
+
+function divided(num,denom){
+    if (denom === 0){
+        throw Error("Attempted to divde by zero.");   
+    }
+    return num/denom;   
+    
+}
+divided(50,0);
